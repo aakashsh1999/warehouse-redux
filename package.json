@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^3.4.1",
+    "@capacitor/app": "1.1.0",
+    "@capacitor/core": "^3.4.1",
+    "@capacitor/haptics": "1.1.4",
+    "@capacitor/ios": "^3.4.1",
+    "@capacitor/keyboard": "1.2.2",
+    "@capacitor/status-bar": "1.0.8",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.5",
     "@reduxjs/toolkit": "^1.7.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -10,6 +19,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0"
   },
   "scripts": {
@@ -32,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.4.1",
+    "tailwindcss": "^3.0.23"
   }
 }
