@@ -1,5 +1,5 @@
-import { Fragment, useState, useEffect } from "react";
-import { Menu, Transition, Listbox } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import { Transition, Listbox } from "@headlessui/react";
 import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
 import { data } from "../warehouse_data";
 import { useNavigate } from "react-router";
@@ -15,18 +15,12 @@ export default function Warehouse() {
     { name: "Cluster" },
     { name: "Space Available Limit" },
   ];
-  console.log(selector);
-
-  useEffect(() => {
-      console.log(selector)
-  }, [])
   
 
   const navigate = useNavigate()
   const [selected, setSelected] = useState(filterList[0]);
   const [search, setSearch] = useState("");
   let searchedData = data.filter((el) => el.name.toLowerCase().indexOf(search.toLowerCase()) !== -1);
-  const [filteredArray, setFilteredArray] = useState([]);
 
   return (
     <div className="lg:justify-between max-w-7xl mx-auto mt-4 px-4">
