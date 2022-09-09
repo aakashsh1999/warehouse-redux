@@ -9,13 +9,7 @@ import {useDispatch, useSelector} from 'react-redux'
 
 export default function Warehouse() {
   const dispatch = useDispatch();
-  const selector = useSelector(warehoueData);
-  const filterList = [
-    { name: "City" },
-    { name: "Cluster" },
-    { name: "Space Available Limit" },
-  ];
-  
+ 
 
   const navigate = useNavigate()
   const [selected, setSelected] = useState(filterList[0]);
